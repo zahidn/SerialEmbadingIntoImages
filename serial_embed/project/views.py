@@ -12,3 +12,12 @@ class Index(View):
     def post(self, request):
 
         return JsonResponse({'status': 'good'})
+
+
+class Login(View):
+    def get(self, request):
+        return render(request, 'Register.html')
+
+    def post(self, request):
+
+        return JsonResponse({'status': 'good'})
